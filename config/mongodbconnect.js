@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var mongoDB = 'mongodb://admin:admin@ds115768.mlab.com:15768/itmadeeasy';
+var mongoDB = process.env.MONGODB_URI || 'mongodb://admin:admin@ds115768.mlab.com:15768/itmadeeasy';
 
 mongoose.connect(mongoDB);
 
